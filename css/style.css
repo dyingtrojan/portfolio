@@ -24,9 +24,6 @@ body {
 .header>a {
     margin-right: 2%;
 }
-#projetos {
-    margin-bottom: 20%;
-}
 
 a {
     text-decoration: none;
@@ -45,9 +42,12 @@ h5,
 h6 {
     color: #BDD8E9;
 }
-.left{
-    float: left;
+.container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
-.right{
-    float: right;
+.left, .right{
+    flex: 1
 }
