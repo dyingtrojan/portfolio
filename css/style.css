@@ -5,13 +5,25 @@ body {
     font-family: 'Outfit';
     background: #001D39;
 }
-
+video{
+    width: 50%;
+}
 main {
     padding: 200px;
 }
 
-@media (max-width: 768px) {
+#contatos-e-links {
+    background: #001D39;
+    background: linear-gradient(180deg, rgba(0, 29, 57, 1) 0%, rgba(0, 0, 0, 1) 64%);
+    padding: 200px;
+}
+
+@media (max-width: 800px) {
     main {
+        padding: 20px;
+    }
+
+    #contatos-e-links {
         padding: 20px;
     }
 }
@@ -33,7 +45,7 @@ header {
 
 @media (max-width: 480px) {
     .mobile {
-        display:inherit;
+        display: inherit;
         align-items: right;
         position: sticky;
         top: 0;
