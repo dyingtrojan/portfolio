@@ -9,6 +9,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 let ActualTheme = "dark";
+let LangMenuOpen = false;
 const matchTema = window.matchMedia('(prefers-color-scheme: dark)').matches
 if (matchTema == true){
     ActualTheme = "dark"
@@ -52,4 +53,9 @@ function smoothChangeTheme(){
     const transition = document.startViewTransition(() => {
         changeTheme();
     });
+}
+function LangMenu(){
+    const overlay = document.getElementById('overlay');
+    overlay.style.display == "none" ? overlay.style.display = "flex" : overlay.style.display = "none";
+
 }

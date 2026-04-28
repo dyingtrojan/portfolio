@@ -40,6 +40,38 @@ img {
     width: 60%;
     border-radius: 2%;
 }
+.lang-choose {
+    background-color: #000000;
+    margin: 0 auto;
+    width: 25%;
+    padding: 2%;
+    text-align: center;
+    border-radius: 2%;
+}
+
+.lang-choose>button {
+    all: unset;
+    color: #7BBDE8;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.overlay {
+    display: none;
+    background-color: #000000b4;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    position: fixed;
+    margin: auto;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+}
 
 @media (max-width: 800px) {
     main {
@@ -62,7 +94,7 @@ header {
     top: 0;
     background: #EFF1F3;
     background: linear-gradient(0deg, rgba(239, 241, 243, 1) 0%, rgba(0, 29, 57, 1) 100%);
-    z-index: 1000;
+    z-index: 999;
     width: 100%;
 }
 
@@ -94,7 +126,7 @@ header>button>i {
         top: 0;
         background: #082642;
         background: linear-gradient(180deg, rgba(8, 38, 66, 1) 0%, rgba(0, 29, 57, 0) 100%);
-        z-index: 1000;
+        z-index: 999;
         width: 100%;
     }
 

@@ -17,8 +17,18 @@
         <a href="#projetos">Projetos</a>
         <a href="#contatos-e-links">Contatos e Links</a>
         <button onclick="smoothChangeTheme()"><i id="iconTheme" class="fa-regular fa-moon fa-sun"></i></button>
-        <button><i class="fa-solid fa-language"></i></button>
+        <button onclick="LangMenu()"><i class="fa-solid fa-language"></i></button>
     </header>
+    <div class="overlay" id="overlay">
+        <div class="lang-choose">
+            <h3>Escolha seu idioma</h3>
+            <button>🇧🇷|🇵🇹| Português</button>
+            <br>
+            <button>🇺🇸|🇬🇧|🇦🇺| English</button>
+            <br>
+            <button onclick="LangMenu()">Voltar</button>
+        </div>
+    </div>
     <header class="mobile">
         <button onclick="navbarOn()"><i class="fa-solid fa-bars"></i></button>
         <br>
@@ -48,7 +58,7 @@
 
             <div id="sobre">
                 <h1 class="center">Sobre mim</h1>
-                <p>Meu nome é Max Gois Pina Santos, tenho 17 anos.</p>  
+                <p>Meu nome é Max Gois Pina Santos, tenho 17 anos.</p>
                 <p>Estou no 3º ano do ensino médio, e cursando Desenvolvimento de Sistemas pelo SENAI.</p>
             </div>
             <div id="habilidades">
