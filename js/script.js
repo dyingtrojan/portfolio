@@ -59,10 +59,6 @@ function LangMenu(){
     overlay.style.display == "none" ? overlay.style.display = "flex" : overlay.style.display = "none";
 }
 function change_lang(lang = ''){
-    if (lang == 'pt'){
-        window.location.href = "../html/pt-br.html";
-    }
-    if (lang == 'en'){
-        window.location.href = "../html/en-us.html";
-    }
+    localStorage.setItem("preferredLanguage", lang);
+    window.location.href = `${lang}.html`;
 }
