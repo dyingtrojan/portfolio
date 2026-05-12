@@ -35,17 +35,17 @@ function changeTheme(){
     var css = document.getElementById('tema');
     var iconTheme = document.getElementById("iconTheme")
     if (ActualTheme == "dark"){
-        css.setAttribute('href', "css/dark_theme.css")
+        css.setAttribute('href', "/css/dark_theme.css")
         iconTheme.classList.replace("fa-sun", "fa-moon")
         ActualTheme = "light";
     }else{
-        css.setAttribute('href', "css/light_theme.css")
+        css.setAttribute('href', "/css/light_theme.css")
         iconTheme.classList.replace("fa-moon", "fa-sun")
         ActualTheme = "dark"
     }
 }
 function smoothChangeTheme(){
-    if (!document.startViewTransition){
+    if (!document.startViewTransition){ 
         changeTheme();
         return;
     }
@@ -57,5 +57,12 @@ function smoothChangeTheme(){
 function LangMenu(){
     const overlay = document.getElementById('overlay');
     overlay.style.display == "none" ? overlay.style.display = "flex" : overlay.style.display = "none";
-
+}
+function change_lang(lang = ''){
+    if (lang == 'pt'){
+        window.location.href = "/html/pt-br.html";
+    }
+    if (lang == 'en'){
+        window.location.href = "/html/en-us.html";
+    }
 }
