@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecionando para lingua do sistema...</title>
     <script>
-        const lang = navigator.language || navigator.userLanguage;
+        const savedLang = localStorage.getItem('preferredLanguage');
 
-        if (lang.startsWith('pt')) {
-            window.location.href = '/html/pt-br.html';
+        if (savedLang) {
+            window.location.replace(`./html/${savedLang}.html`);
         } else {
-            window.location.href = '/html/en-us.html';
+            const browserLang = navigator.language?.toLowerCase() || 'en';
+            const lang = browserLang.startsWith('pt') ? 'pt-br' : 'en-us';
+            window.location.replace(`./html/${lang}.html`);
         }
     </script>
 </head>

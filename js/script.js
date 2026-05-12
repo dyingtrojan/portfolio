@@ -60,9 +60,9 @@ function LangMenu(){
 }
 function change_lang(lang = ''){
     if (lang == 'pt'){
-        window.location.href = "/html/pt-br.html";
+        window.location.href = "./html/pt-br.html";
     }
     if (lang == 'en'){
-        window.location.href = "/html/en-us.html";
+        window.location.href = "./html/en-us.html";
     }
 }
