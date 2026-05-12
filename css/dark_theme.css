@@ -8,6 +8,7 @@ body {
     margin: 0;
     font-family: 'Outfit';
     background-color: #001d39;
+    background-image: url("assets/img/ascii-animation.gif");
 }
 
 video {
